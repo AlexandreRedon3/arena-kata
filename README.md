@@ -73,10 +73,10 @@ Le héros ne s'attaquera jamais à un héros déjà vaincu (donc avec `0 LP`)
 
 Les jeux concurrents ont riposté à nos premiers développements du système d'avantage par une avalanche de `buffs` aux caractéristiques diverses et variées. Nous souhaitons proposer une approche différente avec deux avantages **révolutionaires** :
 
-- `HOLY` : un héros disposant de l'avantage `HOLY` :
-  - N'est plus affecté par un avantage ou un désavantage face à ses adversaires
-  - Il choisit donc n'importe quel adversaire
-  - Il inflige 20% de dégâts en moins, mais ignore la déf de l'adversaire
+- `HOLY` : un héros avec l'avantage `HOLY` :
+  - N'est plus affecté par un avantage ou un désavantage face à ses adversaires (qu'il soit en attaque ou en défense)
+  - S'il est l'attaquant, il choisit donc n'importe quel adversaire
+  - S'il est l'attaquant, il inflige 20% de dégâts en moins, mais ignore la déf de l'adversaire
 - `TURNCOAT` : un héros disposant de l'avantage `TURNCOAT` subit un changement d'élément temporaire, en faveur de l'élément qu'il craint.
   - S'il était `Feu`, il devient `Eau`
   - S'il était `Eau`, il devient `Terre`
