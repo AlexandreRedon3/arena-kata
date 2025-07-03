@@ -1,0 +1,776 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ArenaDamageCalculator (approval) should compute damage for a simple case (approval) 1`] = `
+Array [
+  Hero {
+    "buffs": Array [],
+    "crtr": 0,
+    "def": 30,
+    "element": 1,
+    "leth": 0,
+    "lp": 1,
+    "pow": 80,
+  },
+  Hero {
+    "buffs": Array [],
+    "crtr": 0,
+    "def": 40,
+    "element": 2,
+    "leth": 0,
+    "lp": 110,
+    "pow": 90,
+  },
+]
+`;
+
+exports[`ArenaDamageCalculator exhaustive approval Earth attaque Water (pas critique, pas de buff) 1`] = `
+Array [
+  Hero {
+    "buffs": Array [],
+    "crtr": 0,
+    "def": 50,
+    "element": 0,
+    "leth": 0,
+    "lp": 1,
+    "pow": 100,
+  },
+  Hero {
+    "buffs": Array [],
+    "crtr": 0,
+    "def": 50,
+    "element": 1,
+    "leth": 0,
+    "lp": 110,
+    "pow": 100,
+  },
+]
+`;
+
+exports[`ArenaDamageCalculator exhaustive approval Earth attaque Water avec critique très haut 1`] = `
+Array [
+  Hero {
+    "buffs": Array [],
+    "crtr": 0,
+    "def": 50,
+    "element": 0,
+    "leth": 0,
+    "lp": 0,
+    "pow": 100,
+  },
+]
+`;
+
+exports[`ArenaDamageCalculator exhaustive approval Earth attaque Water avec défense très basse 1`] = `
+Array [
+  Hero {
+    "buffs": Array [],
+    "crtr": 0,
+    "def": 0,
+    "element": 0,
+    "leth": 0,
+    "lp": 0,
+    "pow": 100,
+  },
+]
+`;
+
+exports[`ArenaDamageCalculator exhaustive approval Earth attaque Water, attaquant Attack, défenseur Defense, critique 1`] = `
+Array [
+  Hero {
+    "buffs": Array [
+      1,
+    ],
+    "crtr": 0,
+    "def": 3000,
+    "element": 0,
+    "leth": 0,
+    "lp": 26,
+    "pow": 100,
+  },
+]
+`;
+
+exports[`ArenaDamageCalculator exhaustive approval Earth attaque Water, buff Defense réduit dégâts à 0 1`] = `
+Array [
+  Hero {
+    "buffs": Array [
+      1,
+    ],
+    "crtr": 0,
+    "def": 6000,
+    "element": 0,
+    "leth": 0,
+    "lp": 120,
+    "pow": 100,
+  },
+]
+`;
+
+exports[`ArenaDamageCalculator exhaustive approval Earth attaque Water, critique, attaquant Attack, défenseur Defense 1`] = `
+Array [
+  Hero {
+    "buffs": Array [
+      1,
+    ],
+    "crtr": 0,
+    "def": 50,
+    "element": 0,
+    "leth": 0,
+    "lp": 0,
+    "pow": 100,
+  },
+]
+`;
+
+exports[`ArenaDamageCalculator exhaustive approval Earth attaque Water, critique, défenseur buff Defense 1`] = `
+Array [
+  Hero {
+    "buffs": Array [
+      1,
+    ],
+    "crtr": 0,
+    "def": 50,
+    "element": 0,
+    "leth": 0,
+    "lp": 0,
+    "pow": 100,
+  },
+]
+`;
+
+exports[`ArenaDamageCalculator exhaustive approval Earth attaque Water, défenseur déjà à 0 1`] = `
+Array [
+  Hero {
+    "buffs": Array [],
+    "crtr": 0,
+    "def": 50,
+    "element": 0,
+    "leth": 0,
+    "lp": 0,
+    "pow": 100,
+  },
+]
+`;
+
+exports[`ArenaDamageCalculator exhaustive approval Earth attaque, un seul défenseur vivant 1`] = `
+Array [
+  Hero {
+    "buffs": Array [],
+    "crtr": 0,
+    "def": 50,
+    "element": 0,
+    "leth": 0,
+    "lp": 0,
+    "pow": 100,
+  },
+  Hero {
+    "buffs": Array [],
+    "crtr": 0,
+    "def": 50,
+    "element": 1,
+    "leth": 0,
+    "lp": 41,
+    "pow": 100,
+  },
+]
+`;
+
+exports[`ArenaDamageCalculator exhaustive approval Fire attaque Earth (pas critique, pas de buff) 1`] = `
+Array [
+  Hero {
+    "buffs": Array [],
+    "crtr": 0,
+    "def": 50,
+    "element": 2,
+    "leth": 0,
+    "lp": 1,
+    "pow": 100,
+  },
+  Hero {
+    "buffs": Array [],
+    "crtr": 0,
+    "def": 50,
+    "element": 0,
+    "leth": 0,
+    "lp": 110,
+    "pow": 100,
+  },
+]
+`;
+
+exports[`ArenaDamageCalculator exhaustive approval Fire attaque Earth avec critique très bas 1`] = `
+Array [
+  Hero {
+    "buffs": Array [],
+    "crtr": 0,
+    "def": 50,
+    "element": 2,
+    "leth": 0,
+    "lp": 1,
+    "pow": 100,
+  },
+]
+`;
+
+exports[`ArenaDamageCalculator exhaustive approval Fire attaque Earth avec valeurs maximales 1`] = `
+Array [
+  Hero {
+    "buffs": Array [],
+    "crtr": 0,
+    "def": 9999,
+    "element": 2,
+    "leth": 0,
+    "lp": 9999,
+    "pow": 100,
+  },
+]
+`;
+
+exports[`ArenaDamageCalculator exhaustive approval Fire attaque Earth, attaquant Attack + puissance très haute 1`] = `
+Array [
+  Hero {
+    "buffs": Array [],
+    "crtr": 0,
+    "def": 50,
+    "element": 2,
+    "leth": 0,
+    "lp": 0,
+    "pow": 100,
+  },
+]
+`;
+
+exports[`ArenaDamageCalculator exhaustive approval Fire attaque Earth, critique, buff Attack 1`] = `
+Array [
+  Hero {
+    "buffs": Array [],
+    "crtr": 0,
+    "def": 50,
+    "element": 2,
+    "leth": 0,
+    "lp": 0,
+    "pow": 100,
+  },
+]
+`;
+
+exports[`ArenaDamageCalculator exhaustive approval Fire attaque Earth, critique, lethality, buff Attack 1`] = `
+Array [
+  Hero {
+    "buffs": Array [],
+    "crtr": 0,
+    "def": 50,
+    "element": 2,
+    "leth": 0,
+    "lp": 0,
+    "pow": 100,
+  },
+]
+`;
+
+exports[`ArenaDamageCalculator exhaustive approval Fire attaque Earth, défense annule les dégâts 1`] = `
+Array [
+  Hero {
+    "buffs": Array [],
+    "crtr": 0,
+    "def": 7500,
+    "element": 2,
+    "leth": 0,
+    "lp": 120,
+    "pow": 100,
+  },
+]
+`;
+
+exports[`ArenaDamageCalculator exhaustive approval Fire attaque, plusieurs cibles, cible le troisième 1`] = `
+Array [
+  Hero {
+    "buffs": Array [],
+    "crtr": 0,
+    "def": 50,
+    "element": 2,
+    "leth": 0,
+    "lp": 120,
+    "pow": 100,
+  },
+  Hero {
+    "buffs": Array [],
+    "crtr": 0,
+    "def": 50,
+    "element": 0,
+    "leth": 0,
+    "lp": 110,
+    "pow": 100,
+  },
+  Hero {
+    "buffs": Array [],
+    "crtr": 0,
+    "def": 50,
+    "element": 2,
+    "leth": 0,
+    "lp": 11,
+    "pow": 100,
+  },
+]
+`;
+
+exports[`ArenaDamageCalculator exhaustive approval Fire attaque, tous les défenseurs sont Earth 1`] = `
+Array [
+  Hero {
+    "buffs": Array [],
+    "crtr": 0,
+    "def": 50,
+    "element": 2,
+    "leth": 0,
+    "lp": 1,
+    "pow": 100,
+  },
+  Hero {
+    "buffs": Array [],
+    "crtr": 0,
+    "def": 50,
+    "element": 2,
+    "leth": 0,
+    "lp": 130,
+    "pow": 100,
+  },
+]
+`;
+
+exports[`ArenaDamageCalculator exhaustive approval Fire attaque, tous les défenseurs sont Fire 1`] = `
+Array [
+  Hero {
+    "buffs": Array [],
+    "crtr": 0,
+    "def": 50,
+    "element": 1,
+    "leth": 0,
+    "lp": 21,
+    "pow": 100,
+  },
+  Hero {
+    "buffs": Array [],
+    "crtr": 0,
+    "def": 50,
+    "element": 1,
+    "leth": 0,
+    "lp": 130,
+    "pow": 100,
+  },
+]
+`;
+
+exports[`ArenaDamageCalculator exhaustive approval Fire attaque, tous les défenseurs sont Water 1`] = `
+Array [
+  Hero {
+    "buffs": Array [],
+    "crtr": 0,
+    "def": 50,
+    "element": 0,
+    "leth": 0,
+    "lp": 41,
+    "pow": 100,
+  },
+  Hero {
+    "buffs": Array [],
+    "crtr": 0,
+    "def": 50,
+    "element": 0,
+    "leth": 0,
+    "lp": 130,
+    "pow": 100,
+  },
+]
+`;
+
+exports[`ArenaDamageCalculator exhaustive approval Fire attaque, tous les éléments en défense 1`] = `
+Array [
+  Hero {
+    "buffs": Array [],
+    "crtr": 0,
+    "def": 50,
+    "element": 1,
+    "leth": 0,
+    "lp": 120,
+    "pow": 100,
+  },
+  Hero {
+    "buffs": Array [],
+    "crtr": 0,
+    "def": 50,
+    "element": 0,
+    "leth": 0,
+    "lp": 110,
+    "pow": 100,
+  },
+  Hero {
+    "buffs": Array [],
+    "crtr": 0,
+    "def": 50,
+    "element": 2,
+    "leth": 0,
+    "lp": 11,
+    "pow": 100,
+  },
+]
+`;
+
+exports[`ArenaDamageCalculator exhaustive approval Water attaque Fire (critique) 1`] = `
+Array [
+  Hero {
+    "buffs": Array [],
+    "crtr": 0,
+    "def": 50,
+    "element": 1,
+    "leth": 0,
+    "lp": 0,
+    "pow": 100,
+  },
+]
+`;
+
+exports[`ArenaDamageCalculator exhaustive approval Water attaque Fire (pas critique, pas de buff) 1`] = `
+Array [
+  Hero {
+    "buffs": Array [],
+    "crtr": 0,
+    "def": 50,
+    "element": 1,
+    "leth": 0,
+    "lp": 1,
+    "pow": 100,
+  },
+  Hero {
+    "buffs": Array [],
+    "crtr": 0,
+    "def": 50,
+    "element": 2,
+    "leth": 0,
+    "lp": 110,
+    "pow": 100,
+  },
+]
+`;
+
+exports[`ArenaDamageCalculator exhaustive approval Water attaque Fire avec buff Attack 1`] = `
+Array [
+  Hero {
+    "buffs": Array [],
+    "crtr": 0,
+    "def": 50,
+    "element": 1,
+    "leth": 0,
+    "lp": 0,
+    "pow": 100,
+  },
+]
+`;
+
+exports[`ArenaDamageCalculator exhaustive approval Water attaque Fire avec défense très haute 1`] = `
+Array [
+  Hero {
+    "buffs": Array [],
+    "crtr": 0,
+    "def": 10000,
+    "element": 1,
+    "leth": 0,
+    "lp": 120,
+    "pow": 100,
+  },
+]
+`;
+
+exports[`ArenaDamageCalculator exhaustive approval Water attaque Fire avec lethality 1`] = `
+Array [
+  Hero {
+    "buffs": Array [],
+    "crtr": 0,
+    "def": 50,
+    "element": 1,
+    "leth": 0,
+    "lp": 1,
+    "pow": 100,
+  },
+]
+`;
+
+exports[`ArenaDamageCalculator exhaustive approval Water attaque Fire avec puissance très haute 1`] = `
+Array [
+  Hero {
+    "buffs": Array [],
+    "crtr": 0,
+    "def": 50,
+    "element": 1,
+    "leth": 0,
+    "lp": 0,
+    "pow": 100,
+  },
+]
+`;
+
+exports[`ArenaDamageCalculator exhaustive approval Water attaque Fire avec valeurs minimales 1`] = `
+Array [
+  Hero {
+    "buffs": Array [],
+    "crtr": 0,
+    "def": 0,
+    "element": 1,
+    "leth": 0,
+    "lp": 0,
+    "pow": 100,
+  },
+]
+`;
+
+exports[`ArenaDamageCalculator exhaustive approval Water attaque Fire déjà mort 1`] = `
+Array [
+  Hero {
+    "buffs": Array [],
+    "crtr": 0,
+    "def": 50,
+    "element": 1,
+    "leth": 0,
+    "lp": 0,
+    "pow": 100,
+  },
+  Hero {
+    "buffs": Array [],
+    "crtr": 0,
+    "def": 50,
+    "element": 2,
+    "leth": 0,
+    "lp": 31,
+    "pow": 100,
+  },
+]
+`;
+
+exports[`ArenaDamageCalculator exhaustive approval Water attaque Fire, PV tombe à 0 1`] = `
+Array [
+  Hero {
+    "buffs": Array [],
+    "crtr": 0,
+    "def": 50,
+    "element": 1,
+    "leth": 0,
+    "lp": 0,
+    "pow": 100,
+  },
+]
+`;
+
+exports[`ArenaDamageCalculator exhaustive approval Water attaque Fire, attaquant Attack, défenseur Defense 1`] = `
+Array [
+  Hero {
+    "buffs": Array [
+      1,
+    ],
+    "crtr": 0,
+    "def": 50,
+    "element": 1,
+    "leth": 0,
+    "lp": 9,
+    "pow": 100,
+  },
+]
+`;
+
+exports[`ArenaDamageCalculator exhaustive approval Water attaque Fire, défenseur Defense + défense très haute 1`] = `
+Array [
+  Hero {
+    "buffs": Array [
+      1,
+    ],
+    "crtr": 0,
+    "def": 8000,
+    "element": 1,
+    "leth": 0,
+    "lp": 120,
+    "pow": 100,
+  },
+]
+`;
+
+exports[`ArenaDamageCalculator exhaustive approval Water attaque Fire, défenseur a buff Defense 1`] = `
+Array [
+  Hero {
+    "buffs": Array [
+      1,
+    ],
+    "crtr": 0,
+    "def": 50,
+    "element": 1,
+    "leth": 0,
+    "lp": 31,
+    "pow": 100,
+  },
+]
+`;
+
+exports[`ArenaDamageCalculator exhaustive approval Water attaque Fire, dégâts dépassent les PV 1`] = `
+Array [
+  Hero {
+    "buffs": Array [],
+    "crtr": 0,
+    "def": 50,
+    "element": 1,
+    "leth": 0,
+    "lp": 0,
+    "pow": 100,
+  },
+]
+`;
+
+exports[`ArenaDamageCalculator exhaustive approval Water attaque Fire, dégâts exacts pour réduire à 0 1`] = `
+Array [
+  Hero {
+    "buffs": Array [],
+    "crtr": 0,
+    "def": 0,
+    "element": 1,
+    "leth": 0,
+    "lp": 0,
+    "pow": 100,
+  },
+]
+`;
+
+exports[`ArenaDamageCalculator exhaustive approval Water attaque Fire, dégâts à 0 1`] = `
+Array [
+  Hero {
+    "buffs": Array [],
+    "crtr": 0,
+    "def": 50,
+    "element": 1,
+    "leth": 0,
+    "lp": 120,
+    "pow": 100,
+  },
+]
+`;
+
+exports[`ArenaDamageCalculator exhaustive approval Water attaque Fire, lethality très haute 1`] = `
+Array [
+  Hero {
+    "buffs": Array [],
+    "crtr": 0,
+    "def": 50,
+    "element": 1,
+    "leth": 0,
+    "lp": 1,
+    "pow": 100,
+  },
+]
+`;
+
+exports[`ArenaDamageCalculator exhaustive approval Water attaque, mélange de défenseurs morts et vivants 1`] = `
+Array [
+  Hero {
+    "buffs": Array [],
+    "crtr": 0,
+    "def": 50,
+    "element": 1,
+    "leth": 0,
+    "lp": 0,
+    "pow": 100,
+  },
+  Hero {
+    "buffs": Array [],
+    "crtr": 0,
+    "def": 50,
+    "element": 2,
+    "leth": 0,
+    "lp": 110,
+    "pow": 100,
+  },
+  Hero {
+    "buffs": Array [],
+    "crtr": 0,
+    "def": 50,
+    "element": 1,
+    "leth": 0,
+    "lp": 0,
+    "pow": 100,
+  },
+  Hero {
+    "buffs": Array [],
+    "crtr": 0,
+    "def": 50,
+    "element": 0,
+    "leth": 0,
+    "lp": 1,
+    "pow": 100,
+  },
+]
+`;
+
+exports[`ArenaDamageCalculator exhaustive approval Water attaque, plusieurs Fire, cible le second 1`] = `
+Array [
+  Hero {
+    "buffs": Array [],
+    "crtr": 0,
+    "def": 50,
+    "element": 1,
+    "leth": 0,
+    "lp": 120,
+    "pow": 100,
+  },
+  Hero {
+    "buffs": Array [],
+    "crtr": 0,
+    "def": 50,
+    "element": 1,
+    "leth": 0,
+    "lp": 11,
+    "pow": 100,
+  },
+]
+`;
+
+exports[`ArenaDamageCalculator exhaustive approval Water attaque, tableau vide de défenseurs (couverture lignes 46-47) 1`] = `Array []`;
+
+exports[`ArenaDamageCalculator exhaustive approval Water attaque, tous les défenseurs sont Earth 1`] = `
+Array [
+  Hero {
+    "buffs": Array [],
+    "crtr": 0,
+    "def": 50,
+    "element": 2,
+    "leth": 0,
+    "lp": 41,
+    "pow": 100,
+  },
+  Hero {
+    "buffs": Array [],
+    "crtr": 0,
+    "def": 50,
+    "element": 2,
+    "leth": 0,
+    "lp": 130,
+    "pow": 100,
+  },
+]
+`;
+
+exports[`ArenaDamageCalculator exhaustive approval Water attaque, tous les défenseurs sont morts 1`] = `
+Array [
+  Hero {
+    "buffs": Array [],
+    "crtr": 0,
+    "def": 50,
+    "element": 1,
+    "leth": 0,
+    "lp": 0,
+    "pow": 100,
+  },
+  Hero {
+    "buffs": Array [],
+    "crtr": 0,
+    "def": 50,
+    "element": 2,
+    "leth": 0,
+    "lp": 0,
+    "pow": 100,
+  },
+]
+`;

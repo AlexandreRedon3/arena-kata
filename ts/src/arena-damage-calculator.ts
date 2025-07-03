@@ -50,6 +50,10 @@ export class ArenaDamageCalculator {
 
     const attacked = adv.length && adv[Math.floor(Math.random() * adv.length)] || eq.length && eq[Math.floor(Math.random() * eq.length)] || dis[Math.floor(Math.random() * dis.length)];
 
+    if (!attacked) {
+      return defenders;
+    }
+
     const c = Math.random() * 100 < attacker.crtr;
     let dmg = 0;
     if(c) {
